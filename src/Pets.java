@@ -5,10 +5,9 @@ public class Pets {
 
         String name;
         String type;
-        int age;
-        int mumbers[] = new int[2];
-        mumbers[0] = 123;
-        mumbers[1] = 543;
+        int age[] = new int[2];
+        age[0] = 111;
+        age[1] = 222;
 
         System.out.print("Какое у вас животное?:");
         type = sc.nextLine();
@@ -17,11 +16,11 @@ public class Pets {
         name = sc.nextLine();
 
         System.out.print("Ввести возраст животного:");
-        age = sc.nextInt();
+        age[0] = sc.nextInt();
 
         System.out.println("Имя: " + name);
-        System.out.println("Возраст" + type + " " + age);
-        System.out.println("ЭТО ЛОСОСЬ " + mumbers[0] + " " + mumbers[1]);
+        System.out.println("Возраст " + type + " " + age[0]);
+        System.out.println("ЭТО ЛОСОСЬ " + age[0]);
 
     }
 }
