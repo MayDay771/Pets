@@ -4,10 +4,14 @@ public class Pets {
         Scanner sc = new Scanner(System.in);
 
         String name;
+        String type;
         int age;
-        int d[] = new int[2];
-        d[0] = 123;
-        d[1] = 543;
+        int mumbers[] = new int[2];
+        mumbers[0] = 123;
+        mumbers[1] = 543;
+
+        System.out.print("Какое у вас животное?:");
+        type = sc.nextLine();
 
         System.out.print("Ввести имя животного:");
         name = sc.nextLine();
@@ -16,7 +20,8 @@ public class Pets {
         age = sc.nextInt();
 
         System.out.println("Имя: " + name);
-        System.out.println("Возраст Пса: " + age);
-        System.out.println("ЭТО ЛОСОСЬ1231231231" + d[0] + " " + d[1]);
+        System.out.println("Возраст" + type + " " + age);
+        System.out.println("ЭТО ЛОСОСЬ " + mumbers[0] + " " + mumbers[1]);
+
     }
 }
